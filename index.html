@@ -1,11 +1,129 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Formulario de Inscripción Curso</title>
+    <link rel="stylesheet" href="style.css/estilos.css">
 </head>
+
 <body>
-    
+    <div class="contenedor">
+
+        <div class="encabezado">
+            <h1>Formulario de Inscripción Curso</h1>
+            <p>Rellene cuidadosamente el formulario de inscripción</p>
+        </div>
+
+        <form action="procesar.php" method="POST">
+
+            <h3>Nombre del alumno</h3>
+            <div class="fila">
+                <div class="col">
+                    <input type="text" name="nombre">
+                    <small>Nombre</small>
+                </div>
+                <div class="col">
+                    <input type="text" name="segundo_nombre">
+                    <small>Segundo Nombre</small>
+                </div>
+                <div class="col">
+                    <input type="text" name="apellido">
+                    <small>Apellido</small>
+                </div>
+            </div>
+
+            <div class="fila">
+                <div class="col">
+                    <h3>Fecha de nacimiento</h3>
+                    <input type="text" placeholder="MM-DD-YYYY" name="fecha_nacimiento">
+                    <small>Fecha</small>
+                </div>
+                <div class="col">
+                    <h3>Género</h3>
+                    <select name="genero">
+                        <option>Seleccione</option>
+                        <option>Femenino</option>
+                        <option>Masculino</option>
+                    </select>
+                </div>
+            </div>
+
+            <h3>Dirección</h3>
+            <input type="text" name="direccion_calle">
+            <small>Dirección de la calle</small>
+
+            <input type="text" name="direccion_linea2">
+            <small>Dirección de la calle Línea 2</small>
+
+            <div class="fila">
+                <div class="col">
+                    <input type="text" name="ciudad">
+                    <small>Ciudad</small>
+                </div>
+                <div class="col">
+                    <input type="text" name="estado">
+                    <small>Estado / Provincia</small>
+                </div>
+            </div>
+
+            <input type="text" name="codigo_postal">
+            <small>Código Postal</small>
+
+            <div class="fila">
+                <div class="col">
+                    <h3>Email</h3>
+                    <input type="text" name="email">
+                    <small>ejemplo@ejemplo.com</small>
+                </div>
+                <div class="col">
+                    <h3>Número de teléfono</h3>
+                    <input type="text" placeholder="(000) 000-0000" name="telefono">
+                    <small>Favor ingrese un número de teléfono válido.</small>
+                </div>
+            </div>
+
+            <h3>Ha recibido otros cursos Anteriormente</h3>
+            <div class="fila">
+                <div class="col">
+                    <input type="radio" name="cursos" value="si"> Si
+                </div>
+                <div class="col">
+                    <input type="radio" name="cursos" value="no"> No
+                </div>
+            </div>
+
+            <div class="fila">
+                <div class="col">
+                    <h3>Empresa</h3>
+                    <input type="text" name="empresa">
+                </div>
+                <div class="col">
+                    <h3>Cursos</h3>
+                    <select name="curso_seleccionado">
+                        <option>Seleccione</option>
+                        <option>Curso 1</option>
+                        <option>Curso 2</option>
+                    </select>
+                </div>
+            </div>
+
+            <h3>Comentarios adicionales</h3>
+            <textarea name="comentarios"></textarea>
+
+            <hr>
+
+            <button type="submit">Enviar</button>
+
+        </form>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- 2. Tu archivo de JavaScript con la lógica del botón -->
+    <script src="js/trabajo.js"></script>
 </body>
+
 </html>

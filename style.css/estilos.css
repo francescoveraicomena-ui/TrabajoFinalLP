@@ -1,0 +1,113 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 750px;
+}
+
+.encabezado {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.encabezado h1 {
+    font-size: 24px;
+    color: #2c3e50;
+    margin-bottom: 5px;
+}
+
+.encabezado p {
+    color: #7f8c8d;
+    font-size: 14px;
+}
+
+.fila {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.col {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #bdc3c7;
+    border-radius: 4px;
+    font-size: 14px;
+    box-sizing: border-box;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+select:focus,
+textarea:focus {
+    border-color: #3498db;
+}
+
+small {
+    color: #7f8c8d;
+    font-size: 12px;
+    margin-top: 4px;
+}
+
+h3 {
+    font-size: 14px;
+    color: #34495e;
+    margin: 15px 0 5px 0;
+}
+
+.fila .col input[type="radio"] {
+    margin-right: 5px;
+}
+
+textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #ecf0f1;
+    margin: 25px 0;
+}
+
+button[type="submit"] {
+    background-color: #239425;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #36aa48;
+}
